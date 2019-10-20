@@ -2,27 +2,34 @@
 <html>
   <head>
     <link rel="stylesheet" type="text/css" href="style.css"/>
+    <script type="text/javascript" src="script.js"></script>
   </head>
   <body>
-    <div>
-      <button type="button">AC</button>
-      <button type="button">÷</button>
-      <button type="button">7</button>
-      <button type="button">8</button>
-      <button type="button">9</button>
-      <button type="button">*</button>
-      <button type="button">4</button>
-      <button type="button">5</button>
-      <button type="button">6</button>
-      <button type="button">-</button>
-      <button type="button">1</button>
-      <button type="button">2</button>
-      <button type="button">3</button>
-      <button type="button">+</button>
-      <button type="button">0</button>
-      <button type="button">.</button>
-      <button type="button">=</button>
-    </div>
-    <script type="text/javascript" src="script.js"></script>
+    <div id ="calculator" class="centered">
+      <form name="form">
+        <input class="textview" name="textview" placeholder ="0">
+      </form>
+      <div id="calckeys" class="button-layout">
+        <input type="button" onclick ="insert(7)" value="7">
+        <input type="button" onclick ="insert(8)"value="8">
+        <input type="button" onclick ="insert(9)"value="9">
+        <input type="button" onclick ="insert('+')" value="+">
+        <input type="button" onclick ="insert(4)"value="4">
+        <input type="button" onclick ="insert(5)"value="5">
+        <input type="button" onclick ="insert(6)"value="6">
+        <input type="button" onclick ="insert('-')"value="-">
+        <input type="button" onclick ="insert(1)"value="1">
+        <input type="button" onclick ="insert(2)"value="2">
+        <input type="button" onclick ="insert(3)"value="3">
+        <input type="button" onclick ="insert('*')"value="*">
+        <input type="button" onclick ="insert(0)"value="0">
+        <input type="button" onclick ="insert('.')"value=".">
+        <input type="button" onclick ="solve()"value="=">
+        <input type="button" onclick ="insert('/')"value="/">
+        <input type="button" onclick ="clean()"value="C">
+        <input type="button" onclick ="back()"value="DEL">
+      </div>
+  </div>
+
   </body>
 </html>
