@@ -6,30 +6,31 @@
   </head>
   <body>
     <div id ="calculator" class="centered">
+      <h1> My Calculator </h1>
       <form name="form">
-        <input class="textview" name="textview" placeholder ="0">
+        <input class="textview" id="display" name="textview" placeholder ="0">
       </form>
       <div id="calckeys" class="button-layout">
-        <input type="button" onclick ="insert(7)" value="7">
-        <input type="button" onclick ="insert(8)"value="8">
-        <input type="button" onclick ="insert(9)"value="9">
-        <input type="button" onclick ="insert('+')" value="+">
-        <input type="button" onclick ="insert(4)"value="4">
-        <input type="button" onclick ="insert(5)"value="5">
-        <input type="button" onclick ="insert(6)"value="6">
-        <input type="button" onclick ="insert('-')"value="-">
-        <input type="button" onclick ="insert(1)"value="1">
-        <input type="button" onclick ="insert(2)"value="2">
-        <input type="button" onclick ="insert(3)"value="3">
-        <input type="button" onclick ="insert('*')"value="*">
-        <input type="button" onclick ="insert(0)"value="0">
-        <input type="button" onclick ="insert('.')"value=".">
-        <input type="button" onclick ="solve()"value="=">
-        <input type="button" onclick ="insert('/')"value="/">
-        <input type="button" onclick ="clean()"value="C">
-        <input type="button" onclick ="back()"value="DEL">
+        <input type="button" id="seven" onclick="insert(7)" value="7">
+        <input type="button" id="eight" onclick="insert(8)"value="8">
+        <input type="button" id="nine" onclick="insert(9)"value="9">
+        <input type="button" id="add" onclick="insertOperator('+')" value="+">
+        <input type="button" id="four" onclick="insert(4)"value="4">
+        <input type="button" id="five" onclick="insert(5)"value="5">
+        <input type="button" id="six" onclick="insert(6)"value="6">
+        <input type="button" id="subtract" onclick="insertMinus('-')"value="-">
+        <input type="button" id="one" onclick="insert(1)"value="1">
+        <input type="button" id="two" onclick="insert(2)"value="2">
+        <input type="button" id="three" onclick="insert(3)"value="3">
+        <input type="button" id="multiply" onclick="insertOperator('*')"value="*">
+        <input type="button" id="zero" onclick="insertZero()"value="0">
+        <input type="button" id="decimal" onclick="insert('.')"value=".">
+        <input type="button" id="equals" onclick="solve()"value="=">
+        <input type="button" id="divide" onclick="insertOperator('/')"value="/">
+        <input type="button" id="clear" onclick="clean()"value="C">
+        <input type="button" id="divide" onclick="back()"value="DEL">
       </div>
+      <h2> Not Accepted<h2>
   </div>
-
   </body>
 </html>
