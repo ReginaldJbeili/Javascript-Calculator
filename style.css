@@ -21,8 +21,8 @@
   border-width: thick;
   border-color: black;
   background-color: white;
-  padding-left: 50px;
-  padding-right: 50px;
+  padding-left: 15px;
+  padding-right: 15px;
   border-radius: 15px;
 }
 
@@ -39,6 +39,11 @@
   border-style: solid;
   border-width: thin;
   border-color: black;
+  margin-bottom: 15px;
+  text-align: right;
+  padding-right: 15px;
+  background: white;
+  color: gray;
 }
 
 .button-calcustyle {
@@ -48,6 +53,15 @@
   border-width: thin;
   border-color: black;
   border-radius: 5px;
+  margin: 5px;
+  background: black;
+  color: white;
+  transition-duration: 0.4s;
+}
+
+.button-calcustyle1:hover {
+  background: white;
+  color: black;
 }
 
 .operator-calcustyle {
@@ -58,6 +72,13 @@
   border-width: thin;
   border-color: black;
   border-radius: 5px;
+  margin-top: 5px;
+  transition-duration: 0.4s;
+}
+
+.operator-calcustyle1:hover {
+  background: black;
+  color: DeepSkyBlue;
 }
 
 .allclear-calcustyle {
@@ -68,6 +89,12 @@
   border-width: thin;
   border-color: black;
   border-radius: 5px;
+  transition-duration: 0.4s;
+}
+
+.allclear-calcustyle1:hover {
+  background: black;
+  color: red;
 }
 
 .delete-calcustyle {
@@ -78,6 +105,13 @@
   border-width: thin;
   border-color: black;
   border-radius: 5px;
+  margin-right: 10px;
+  transition-duration: 0.4s;
+}
+
+.delete-calcustyle1:hover {
+  background: black;
+  color: yellow;
 }
 .errorstyle {
   display: none;
