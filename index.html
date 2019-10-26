@@ -2,35 +2,36 @@
 <html>
   <head>
     <link rel="stylesheet" type="text/css" href="style.css"/>
+    <link rel ="stylesheet" type="text/css" href = "https://fonts.googleapis.com/css?family=Orbitron|Special+Elite|Syncopate&display=swap"/>
     <script type="text/javascript" src="script.js"></script>
   </head>
-  <body>
-    <div id ="calculator" class="centered">
-      <h1> My Calculator </h1>
+  <body class="bodystyle">
+    <div id ="calculator" class="centered calcstyle">
+      <h1 class="title"> My Calculator </h1>
       <form name="form">
-        <input class="textview" id="display" name="textview" placeholder ="0">
+        <input class="textview display-calcustyle" id="display" name="textview" placeholder ="0">
       </form>
       <div id="calckeys" class="button-layout">
-        <input type="button" id="seven" onclick="insert(7)" value="7">
-        <input type="button" id="eight" onclick="insert(8)"value="8">
-        <input type="button" id="nine" onclick="insert(9)"value="9">
-        <input type="button" id="add" onclick="insertOperator('+')" value="+">
-        <input type="button" id="four" onclick="insert(4)"value="4">
-        <input type="button" id="five" onclick="insert(5)"value="5">
-        <input type="button" id="six" onclick="insert(6)"value="6">
-        <input type="button" id="subtract" onclick="insertMinus('-')"value="-">
-        <input type="button" id="one" onclick="insert(1)"value="1">
-        <input type="button" id="two" onclick="insert(2)"value="2">
-        <input type="button" id="three" onclick="insert(3)"value="3">
-        <input type="button" id="multiply" onclick="insertOperator('*')"value="*">
-        <input type="button" id="zero" onclick="insertZero()"value="0">
-        <input type="button" id="decimal" onclick="insert('.')"value=".">
-        <input type="button" id="equals" onclick="solve()"value="=">
-        <input type="button" id="divide" onclick="insertOperator('/')"value="/">
-        <input type="button" id="clear" onclick="clean()"value="C">
-        <input type="button" id="divide" onclick="back()"value="DEL">
+        <input class="button-calcustyle" type="button" id="seven" onclick="insert(7)" value="7">
+        <input class="button-calcustyle" type="button" id="eight" onclick="insert(8)"value="8">
+        <input class="button-calcustyle" type="button" id="nine" onclick="insert(9)"value="9">
+        <input class="operator-calcustyle" type="button" id="add" onclick="insertOperator('+')" value="+">
+        <input class="button-calcustyle" type="button" id="four" onclick="insert(4)"value="4">
+        <input class="button-calcustyle" type="button" id="five" onclick="insert(5)"value="5">
+        <input class="button-calcustyle" type="button" id="six" onclick="insert(6)"value="6">
+        <input class="operator-calcustyle" type="button" id="subtract" onclick="insertMinus('-')"value="-">
+        <input class="button-calcustyle" type="button" id="one" onclick="insert(1)"value="1">
+        <input class="button-calcustyle" type="button" id="two" onclick="insert(2)"value="2">
+        <input class="button-calcustyle" type="button" id="three" onclick="insert(3)"value="3">
+        <input class="operator-calcustyle" type="button" id="multiply" onclick="insertOperator('*')"value="*">
+        <input class="button-calcustyle" type="button" id="zero" onclick="insertZero()"value="0">
+        <input class="button-calcustyle" type="button" id="decimal" onclick="insert('.')"value=".">
+        <input class="button-calcustyle" type="button" id="equals" onclick="solve()"value="=">
+        <input class="operator-calcustyle" type="button" id="divide" onclick="insertOperator('/')"value="/">
+        <input class="allclear-calcustyle" type="button" id="clear" onclick="clean()"value="AC">
+        <input class="delete-calcustyle" type="button" id="divide" onclick="back()"value="DEL">
       </div>
-      <h2> Not Accepted<h2>
+      <h2 id="errorMessage" class="errorstyle"> Not Accepted<h2>
   </div>
   </body>
 </html>
