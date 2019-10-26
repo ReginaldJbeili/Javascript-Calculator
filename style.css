@@ -4,9 +4,84 @@
   grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
 }
 
+.bodystyle {
+   background-image: linear-gradient(-90deg, blue, white);
+}
+
 .centered {
   position: fixed;
   top: 50%;
   left: 50%;
   transform: translate(-50%,-50%);
+}
+
+.calcstyle {
+  background-image: linear-gradient(-90deg, white, gray);
+  border-style: solid;
+  border-width: thick;
+  border-color: black;
+  background-color: white;
+  padding-left: 50px;
+  padding-right: 50px;
+  border-radius: 15px;
+}
+
+.title {
+  color: black;
+  font-family: "Syncopate";
+  font-size: 30px;
+}
+
+.display-calcustyle {
+  color: black;
+  font-family: "Orbitron";
+  font-size: 20px;
+  border-style: solid;
+  border-width: thin;
+  border-color: black;
+}
+
+.button-calcustyle {
+  font-family: "Orbitron";
+  font-size: 20px;
+  border-style: solid;
+  border-width: thin;
+  border-color: black;
+  border-radius: 5px;
+}
+
+.operator-calcustyle {
+  background: DeepSkyBlue;
+  font-family: "Orbitron";
+  font-size: 20px;
+  border-style: solid;
+  border-width: thin;
+  border-color: black;
+  border-radius: 5px;
+}
+
+.allclear-calcustyle {
+  background: red;
+  font-family: "Orbitron";
+  font-size: 20px;
+  border-style: solid;
+  border-width: thin;
+  border-color: black;
+  border-radius: 5px;
+}
+
+.delete-calcustyle {
+  background: yellow;
+  font-family: "Orbitron";
+  font-size: 20px;
+  border-style: solid;
+  border-width: thin;
+  border-color: black;
+  border-radius: 5px;
+}
+.errorstyle {
+  display: none;
+  position: absolute;
+  color: red;
+  font-family: "Special Elite";
 }
