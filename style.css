@@ -113,9 +113,11 @@
   background: black;
   color: yellow;
 }
-.errorstyle {
-  display: none;
+.bottomstyle {
+  margin-top: 30px;
+  display: block;
   position: absolute;
-  color: red;
+  color: DarkGreen;
+  font-size: 20px;
   font-family: "Special Elite";
 }
