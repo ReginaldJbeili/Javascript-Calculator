@@ -9,7 +9,7 @@
     <div id ="calculator" class="centered calcstyle">
       <h1 class="title"> My Calculator </h1>
       <form name="form">
-        <input class="textview display-calcustyle" id="display" name="textview" placeholder ="0">
+        <input class="textview display-calcustyle" id="display" name="textview" placeholder ="0" maxlength="17">
       </form>
       <div id="calckeys" class="button-layout">
         <input class="button-calcustyle button-calcustyle1" type="button" id="seven" onclick="insert(7)" value="7">
@@ -25,13 +25,13 @@
         <input class="button-calcustyle button-calcustyle1" type="button" id="three" onclick="insert(3)"value="3">
         <input class="operator-calcustyle operator-calcustyle1" type="button" id="multiply" onclick="insertOperator('*')"value="*">
         <input class="button-calcustyle button-calcustyle1" type="button" id="zero" onclick="insertZero()"value="0">
-        <input class="button-calcustyle button-calcustyle1" type="button" id="decimal" onclick="insert('.')"value=".">
+        <input class="button-calcustyle button-calcustyle1" type="button" id="decimal" onclick="insertDecimal('.')"value=".">
         <input class="button-calcustyle button-calcustyle1" type="button" id="equals" onclick="solve()"value="=">
         <input class="operator-calcustyle operator-calcustyle1" type="button" id="divide" onclick="insertOperator('/')"value="/">
         <input class="delete-calcustyle delete-calcustyle1" type="button" id="back" onclick="back()"value="DEL">
         <input class="allclear-calcustyle allclear-calcustyle1" type="button" id="clear" onclick="clean()"value="AC">
       </div>
-      <h2 id="errorMessage" class="errorstyle"> Not Accepted<h2>
+      <h2 id="surprise" class="bottomstyle"> P.S. </br>non-arithmetic input will not be computed</br>P.S.#2</br>you can also type the arithmetics on the display<h2>
   </div>
   </body>
 </html>
