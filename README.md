@@ -1,4 +1,4 @@
 # Javascript-Calculator
-## What the project does
+## About
 * Arithmetic calculator done through html, css, and javascript
 * Uses formula/expression logic
